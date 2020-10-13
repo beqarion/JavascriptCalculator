@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+/*font-family: 'Share Tech Mono', monospace;*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+.containeR {
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  box-shadow: 3px 3px 10px 15px rgba(0,0,0,0.5),
+  				1px 1px 5px 5px rgba(0,0,0,0.7);
+  
+}
+.disp {
+  width: 100%;
+  height: 160px;
+  border: none;
+  background-color: #252525;
+  color: #fff;
+  text-align: right;
+  padding-right: 20px;
+  padding-left: 10px;
+  font-size: 3rem;
+  line-height:80px;
+  border-style: outset;
+  border-width:10px;
+  border-left-color: #eee;
+  border-right-color: #ccc;
+}
+.disp #formula {
+	height: 80px;
+	font-family: 'Share Tech Mono', monospace;
+	word-wrap: break-word;
+	color: cyan;
+}
+.disp #display {
+	font-family: 'Share Tech Mono', monospace;
+	color: cyan;
+}
+.btn-bank {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+  border-color:white;
+  border-style: outset;
+  border-width:5px;
+  border-left-color: #eee;
+  border-top: none;
+}
+.btn-bank button {
+	box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.8);
+	border-style: outset;
+	border-width:5px;
+	text-align: center;
+}
+button {
+  height: 60px;
+  font-size: 2rem!important;
+  background-color: grey;
+  outline: none;
+  border-radius: 3px;
+  border: none;
+}
+
+#equals {
+	grid-area: 2/4/6/5;
+	height: 100%;
+}
