@@ -1,4 +1,12 @@
 
+$(document).ready(function() {
+    
+    $(".btn").mouseup(function(){
+    	console.log( "ready!" );
+	    $(this).blur();
+	})
+});
+
 
 function clearDisplay(input){
 	let formula = document.getElementById("formula");
@@ -104,4 +112,6 @@ function handleSubmit(){
 
 	formula.innerText += "=" + num;
 	display.innerText = num;
+
 }
+
